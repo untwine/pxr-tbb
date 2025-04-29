@@ -1,0 +1,16 @@
+name: Setup oneTBB
+description: Clones oneTBB and applies the pxr patch
+
+runs:
+  using: "composite"
+  steps:
+    - name: Clone oneTBB
+      shell: bash
+      run: |
+        git clone --branch v2022.2.0 --depth 1 https://github.com/oneapi-src/oneTBB.git oneTBB
+        rm -rf oneTBB/README.md
+        cp -r oneTBB/* .
+
+    - name: Apply patch
+      shell: bash
+      run: git apply ./pxr-tbb.patch
