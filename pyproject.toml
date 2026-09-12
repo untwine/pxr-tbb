@@ -21,7 +21,7 @@ classifiers = [
 Repository = "https://github.com/untwine/pxr-tbb"
 
 [tool.scikit-build]
-cmake.version = ">=3.21,<4.2"
+cmake.version = ">=3.21,<4.3"
 cmake.args = [
     "-DTBB_TEST=OFF",
     "-DTBB_EXAMPLES=OFF",
