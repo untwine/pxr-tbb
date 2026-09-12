@@ -7,7 +7,7 @@ runs:
     - name: Clone oneTBB
       shell: bash
       run: |
-        git clone --branch v2022.2.0 --depth 1 https://github.com/oneapi-src/oneTBB.git oneTBB
+        git clone --branch v2023.1.0 --depth 1 https://github.com/oneapi-src/oneTBB.git oneTBB
         rm -rf oneTBB/README.md
         cp -r oneTBB/* .
 

@@ -4,7 +4,7 @@ build-backend = "scikit_build_core.build"
 
 [project]
 name = "pxr-tbb"
-version = "2022.2.0.1"
+version = "2023.1.0"
 description = "Portable TBB bundle for building Pixar's libraries."
 readme = "README.md"
 requires-python = ">=3.8"
